@@ -1,0 +1,9 @@
+{
+  "label": "时政热点",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "收集最新的时事政治文章和评论"
+  }
+}
+
