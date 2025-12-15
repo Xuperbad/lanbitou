@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '申论学习笔记',
-  tagline: '官媒文章学习与拆解',
+  title: '烂笔头',
+  tagline: '好记性不如烂笔头',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -45,17 +45,19 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/Xuperbad/lanbitou/tree/main/',
-        },
+        // docs: {
+        //   sidebarPath: './sidebars.js',
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: 'https://github.com/Xuperbad/lanbitou/tree/main/',
+        // },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
+          routeBasePath: '/',
           editUrl: 'https://github.com/Xuperbad/lanbitou/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
@@ -78,24 +80,24 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: '申论学习笔记',
+        title: '烂笔头',
         logo: {
-          alt: '申论学习笔记 Logo',
+          alt: '申论文章 Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '文章库',
-          },
-          {to: '/blog', label: '学习笔记', position: 'left'},
-          {
-            href: 'https://github.com/Xuperbad/lanbitou',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: '行文',
+          // },
+          // {to: '/blog', label: '记事', position: 'left'},
+          // {
+          //   href: 'https://github.com/Xuperbad/lanbitou',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
@@ -124,7 +126,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 申论学习笔记. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} 烂笔头. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
