@@ -4,6 +4,11 @@
 
 ## 🚀 快速开始
 
+### 环境要求
+
+- **Node.js**: >= 20.0（推荐使用 LTS 版本）
+- **npm**: 随 Node.js 自动安装
+
 ### 本地开发
 
 1. 克隆或进入项目目录：
@@ -15,6 +20,12 @@ cd lanbitou
 ```bash
 npm install
 ```
+
+> 💡 **首次使用必须先安装依赖！** 这会安装所有必需的包（约 1282 个包），包括：
+> - Docusaurus 核心框架
+> - React 和相关依赖
+> - Markdown 增强插件（马克笔标注功能）
+> - 其他必要的开发工具
 
 3. 启动开发服务器：
 ```bash
@@ -200,6 +211,13 @@ git push               # 推送到 GitHub（自动触发部署）
 
 ## ❓ 常见问题
 
+### Q: 首次使用需要做什么？
+**A:** 必须先安装依赖！
+```bash
+npm install    # 首次使用必须执行，安装所有依赖包
+```
+安装完成后才能使用 `npm start` 等命令。
+
 ### Q: 每次修改文章都要 build 吗？
 **A:** 不需要！
 - **本地开发**：运行 `npm start`，修改后自动刷新，无需 build
@@ -221,7 +239,26 @@ git push               # 推送到 GitHub（自动触发部署）
 **A:**
 ```bash
 npm run clear    # 清除缓存
+npm install      # 重新安装依赖（如果依赖有问题）
 npm start        # 重新启动
+```
+
+### Q: 依赖安装失败怎么办？
+**A:**
+```bash
+# 1. 检查 Node.js 版本（需要 >= 20.0）
+node --version
+
+# 2. 清除 npm 缓存
+npm cache clean --force
+
+# 3. 删除 node_modules 和 package-lock.json
+rm -rf node_modules package-lock.json  # Linux/Mac
+# 或
+rmdir /s node_modules & del package-lock.json  # Windows
+
+# 4. 重新安装
+npm install
 ```
 
 ## 📚 学习资源

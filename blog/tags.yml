@@ -1,19 +1,14 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+福建日报:
+  label: 福建日报
+  permalink: /福建日报
+  description: fjrb.fjdaily.com
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+人民日报:
+  label: 人民日报
+  permalink: /人民日报
+  description: paper.people.com.cn
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+经济:
+  label: 经济
+  permalink: /经济
+  description: 经济
