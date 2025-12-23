@@ -28,3 +28,99 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* 马克笔标注样式 - remark-flexible-markers */
+mark.flexible-marker {
+  padding: 0.1em 0.2em;
+  border-radius: 0.2em;
+  font-weight: inherit;
+}
+
+/* 默认高亮（黄色马克笔效果） */
+mark.flexible-marker-default {
+  background-color: #fff59d;
+  color: #000;
+}
+
+/* 红色马克笔 */
+mark.flexible-marker-red {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+/* 蓝色马克笔 */
+mark.flexible-marker-blue {
+  background-color: #bbdefb;
+  color: #1565c0;
+}
+
+/* 绿色马克笔 */
+mark.flexible-marker-green {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+/* 橙色马克笔 */
+mark.flexible-marker-orange {
+  background-color: #ffe0b2;
+  color: #e65100;
+}
+
+/* 紫色马克笔 */
+mark.flexible-marker-purple {
+  background-color: #e1bee7;
+  color: #6a1b9a;
+}
+
+/* 粉色马克笔 */
+mark.flexible-marker-pink {
+  background-color: #f8bbd0;
+  color: #c2185b;
+}
+
+/* 青色马克笔 */
+mark.flexible-marker-cyan {
+  background-color: #b2ebf2;
+  color: #00838f;
+}
+
+/* 暗色模式下的马克笔样式 */
+[data-theme='dark'] mark.flexible-marker-default {
+  background-color: #f9a825;
+  color: #000;
+}
+
+[data-theme='dark'] mark.flexible-marker-red {
+  background-color: #d32f2f;
+  color: #ffebee;
+}
+
+[data-theme='dark'] mark.flexible-marker-blue {
+  background-color: #1976d2;
+  color: #e3f2fd;
+}
+
+[data-theme='dark'] mark.flexible-marker-green {
+  background-color: #388e3c;
+  color: #e8f5e9;
+}
+
+[data-theme='dark'] mark.flexible-marker-orange {
+  background-color: #f57c00;
+  color: #fff3e0;
+}
+
+[data-theme='dark'] mark.flexible-marker-purple {
+  background-color: #7b1fa2;
+  color: #f3e5f5;
+}
+
+[data-theme='dark'] mark.flexible-marker-pink {
+  background-color: #c2185b;
+  color: #fce4ec;
+}
+
+[data-theme='dark'] mark.flexible-marker-cyan {
+  background-color: #0097a7;
+  color: #e0f7fa;
+}

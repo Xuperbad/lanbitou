@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkFlexibleMarkers from 'remark-flexible-markers';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -63,6 +64,8 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
+          // 添加 remark 插件支持马克笔标注语法
+          remarkPlugins: [remarkFlexibleMarkers],
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -107,12 +110,12 @@ const config = {
             title: '内容',
             items: [
               {
-                label: '文章库',
-                to: '/docs/intro',
+                label: '文章归档',
+                to: '/archive',
               },
               {
-                label: '学习笔记',
-                to: '/blog',
+                label: '标签',
+                to: '/tags',
               },
             ],
           },
